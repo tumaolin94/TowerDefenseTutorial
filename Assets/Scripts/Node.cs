@@ -3,6 +3,7 @@
 public class Node : MonoBehaviour
 {
     public Color hoverColor;
+
     public Vector3 positionOffset;
     private GameObject turret;
 
