@@ -1,0 +1,2 @@
+/Users/richardtu/Documents/gitfiles/TowerDefenseTutorial/TDTuorial/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/richardtu/Documents/gitfiles/TowerDefenseTutorial/TDTuorial/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
