@@ -3,6 +3,9 @@
 public class Shop : MonoBehaviour
 {
 
+    public TurretBlueprint standardTurret;
+    public TurretBlueprint missileLauncher;
+
     BuildManager buildManager;
 
     void Start()
@@ -10,15 +13,32 @@ public class Shop : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
-    public void PurchaseStandardTurret()
+    public void SelectStandardTurret()
     {
         Debug.Log("Standard Turret Purchased");
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+        buildManager.SelectTurretToBuild(standardTurret);
     }
 
-    public void PurchaseMissileLauncher()
+    public void SelectMissileLauncher()
     {
         Debug.Log("Another Missile Launcher");
-        buildManager.SetTurretToBuild(buildManager.anotherTurretPrefab);
+        buildManager.SelectTurretToBuild(missileLauncher);
+    }
+
+    [System.Serializable]
+    public class TurretBlueprint
+    {
+
+        public GameObject prefab;
+        public int cost;
+
+        //public GameObject upgradedPrefab;
+        //public int upgradeCost;
+
+        //public int GetSellAmount()
+        //{
+        //    return cost / 2;
+        //}
+
     }
 }
