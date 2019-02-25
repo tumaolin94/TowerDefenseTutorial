@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{DAA9ABDA-134C-73C6-5EAF-FBE077D2D77B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Node.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Assets/Scripts/Waypoints.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="30" Column="42" />
       <File FileName="Assets/Scripts/WaveSpawner.cs" Line="1" Column="12" />
       <File FileName="Assets/Scripts/Turret.cs" Line="90" Column="10" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="47" Column="34" />
-      <File FileName="Assets/Scripts/Node.cs" Line="62" Column="10" />
-      <File FileName="Assets/Scripts/BuildManager.cs" Line="21" Column="1" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="21" Column="38" />
-      <File FileName="Assets/Scripts/Shop.cs" Line="22" Column="71" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="38" Column="23" />
+      <File FileName="Assets/Scripts/Node.cs" Line="60" Column="38" />
+      <File FileName="Assets/Scripts/BuildManager.cs" Line="19" Column="44" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="13" Column="36" />
+      <File FileName="Assets/Scripts/Shop.cs" Line="21" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +17,7 @@
           <Node name="TDTuorial" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Node.cs" selected="True" />
+                <Node name="Bullet.cs" selected="True" />
               </Node>
             </Node>
           </Node>
