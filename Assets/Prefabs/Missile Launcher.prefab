@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  test: 1
   range: 30
   fireRate: 0.25
   enemyTag: Enemy

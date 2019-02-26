@@ -8,7 +8,7 @@ public class Turret : MonoBehaviour
     public Transform target;
     public float test= 1f;
     [Header("Attributes")]
-    public float range = 15f;
+    public float range = 0f;
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 
