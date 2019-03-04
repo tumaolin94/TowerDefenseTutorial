@@ -62,17 +62,33 @@ public class Bullet : MonoBehaviour
         {
             if (collider.tag == "Enemy")
             {
-                Damage(collider.transform);
+                Damage(collider.gameObject);
             }
         }
     }
 
+    void Damage(GameObject enemy)
+    {
+
+        Enemy e = enemy.GetComponentsInChildren<Enemy>()[1];
+        if (e != null)
+        {
+
+            e.TakeDamage(damage);
+        }
+
+    }
+
     void Damage(Transform enemy)
     {
-        Enemy e = enemy.GetComponent<Enemy>();
+        Enemy e = enemy.GetComponent(typeof(Enemy)) as Enemy;
+        Debug.Log("Damage " + e.name);
+
+        Debug.Log("getHealth " + e.getHealth());
 
         if (e != null)
         {
+
             e.TakeDamage(damage);
         }
     }

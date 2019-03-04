@@ -7,7 +7,7 @@ public class Enemy2 : MonoBehaviour
 
     private Transform target;
 
-    private Transform attachTarget;
+    private Transform attackTarget;
 
     private int wavePointIndex = 0;
 
@@ -23,7 +23,7 @@ public class Enemy2 : MonoBehaviour
     void Update()
     {
         Vector3 dir = target.position - transform.position;
-        if (attachTarget != null)
+        if (attackTarget != null)
         {
             Debug.Log("see turret");
             dir = Vector3.zero;
@@ -74,12 +74,12 @@ public class Enemy2 : MonoBehaviour
         if (nearestEnemy != null && shortestDistance < range)
         {
             Debug.Log("change attachTarget  " + shortestDistance);
-            attachTarget = nearestEnemy.transform;
+            attackTarget = nearestEnemy.transform;
             //targetEnemy = nearestEnemy.GetComponent<Enemy>();
         }
         else
         {
-            attachTarget = null;
+            attackTarget = null;
         }
     }
 }

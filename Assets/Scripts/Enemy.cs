@@ -4,28 +4,35 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public float startSpeed = 10f;
-    private float speed;
+    protected float speed;
 
     public float startHealth = 100;
-    private float health;
+    protected float health;
 
     public int worth = 50;
 
     public GameObject deathEffect;
 
-    private Transform target;
+    protected Transform target;
 
     private int wavePointIndex = 0;
-    private bool isDead = false;
+    protected bool isDead = false;
 
     [Header("Unity Stuff")]
     public Image healthBar;
+
+    public float getHealth()
+    {
+        return this.health;
+    }
 
     void Start()
     {
         target = Waypoints.points[0];
         health = startHealth;
         speed = startSpeed;
+
+        Debug.Log("Enemy startHealth + " + health + " startSpeed " + speed);
     }
 
     void Update()
@@ -43,8 +50,9 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        Debug.Log(this.name+ " TakeDamage before " + health + "speed "+ speed);
         health -= amount;
-
+        Debug.Log("TakeDamage " + amount + "left " + health);
         healthBar.fillAmount = health / startHealth;
 
         if (health <= 0 && !isDead)
@@ -53,7 +61,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Die()
+    protected void Die()
     {
         isDead = true;
 

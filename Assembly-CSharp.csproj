@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy2.cs" />
+    <Compile Include="Assets\Scripts\EnemyCanAttack.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LivesUI.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />
