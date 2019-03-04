@@ -70,7 +70,7 @@ public class Bullet : MonoBehaviour
     void Damage(GameObject enemy)
     {
 
-        Enemy e = enemy.GetComponentsInChildren<Enemy>()[1];
+        Enemy e = enemy.GetComponent<Enemy>();
         if (e != null)
         {
 
