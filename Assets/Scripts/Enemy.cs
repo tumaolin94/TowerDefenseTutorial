@@ -1,11 +1,13 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
+    public float startSpeed = 10f;
+    private float speed;
 
-    public int health = 100;
+    public float startHealth = 100;
+    private float health;
 
     public int worth = 50;
 
@@ -16,10 +18,14 @@ public class Enemy : MonoBehaviour
     private int wavePointIndex = 0;
     private bool isDead = false;
 
+    [Header("Unity Stuff")]
+    public Image healthBar;
 
     void Start()
     {
         target = Waypoints.points[0];
+        health = startHealth;
+        speed = startSpeed;
     }
 
     void Update()
@@ -39,7 +45,7 @@ public class Enemy : MonoBehaviour
     {
         health -= amount;
 
-        //healthBar.fillAmount = health / startHealth;
+        healthBar.fillAmount = health / startHealth;
 
         if (health <= 0 && !isDead)
         {
