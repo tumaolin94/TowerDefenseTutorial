@@ -77,7 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   test: 1
-  range: 0
+  range: 10
   fireRate: 1
   enemyTag: Enemy
   partToRotate: {fileID: 8189058942281607074}

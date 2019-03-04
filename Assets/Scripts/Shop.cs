@@ -6,6 +6,8 @@ public class Shop : MonoBehaviour
     public TurretBlueprint standardTurret;
     public TurretBlueprint missileLauncher;
 
+    public GameObject buildEffect;
+
     BuildManager buildManager;
 
     void Start()
